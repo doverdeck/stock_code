@@ -165,9 +165,11 @@ def train1(ticker):
     #print(df)
     #plots the data frame of the date and the predicted values
     df_plot(df, df.iloc[date.index]['Date'], predicted_frame, title=f"{ticker}",xlabel='Date', ylabel='Value',dpi=100)
-#train('MSFT')
-#train('AAPL')
-#train('NVDA')
+#does train data for 20 days for three stocks
+train('MSFT')
+train('AAPL')
+train('NVDA')
+#train data for 1 day in future for same three stocks
 train1('MSFT')
 train1('AAPL')
 train1('NVDA')
